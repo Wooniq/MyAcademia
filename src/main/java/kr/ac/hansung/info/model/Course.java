@@ -38,7 +38,7 @@ public class Course {
     private String name;         // 교과목명
 
     @NotBlank(message = "교과구분은 필수입니다.")
-    @Pattern(regexp = "교양|전기|전필|전선", message = "교과구분은 교양, 전기, 전필, 전선 중 하나여야 합니다.")
+    @Pattern(regexp = "전기|전필|전선|교필|선필교|일선|일교", message = "교과구분은 전기, 전필, 전선, 교필, 선필교, 일선, 일교 중 하나여야 합니다.")
     private String category;     // 교과구분 (전필, 전선 등)
 
     @NotBlank(message = "담당교수는 필수입니다.")
