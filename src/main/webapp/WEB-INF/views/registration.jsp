@@ -4,71 +4,8 @@
 <html>
 <head>
     <title>수강 신청</title>
+    <link rel="stylesheet" href="<c:url value='/resources/css/common.css' />">
     <style>
-        body {
-            background-color: #eef2f7;
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        .header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #ffffff;
-            padding: 10px 20px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-
-        .logo {
-            font-size: 20px;
-            font-weight: bold;
-            color: #003399;
-        }
-
-        .userinfo {
-            font-size: 14px;
-            color: #666;
-        }
-
-        .container {
-            display: flex;
-            min-height: calc(100vh - 60px);
-        }
-
-        .sidebar {
-            min-height: 100vh;
-            background-color: #ffffff;
-            padding-top: 40px;
-            padding-left: 30px;
-        }
-
-        .sidebar button {
-            display: block;
-            width: 100%;
-            margin-bottom: 15px;
-            padding: 12px;
-            border: none;
-            border-radius: 5px;
-            background-color: #ffffff;
-            color: #003399;
-            font-size: 15px;
-            text-align: left;
-            cursor: pointer;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.2);
-        }
-
-        .sidebar button.active {
-            box-shadow: 0 1px 5px rgba(0,0,0,0.3);
-            font-weight: bold;
-        }
-
-        .sidebar button:nth-child(1) { background-color: #FFC9C9; }
-        .sidebar button:nth-child(2) { background-color: #FFDFA3; }
-        .sidebar button:nth-child(3) { background-color: #BDDBBF; }
-        .sidebar button:nth-child(4) { background-color: #C7DBFF; }
-
         .main {
             flex: 1;
             background-color: #dce6f7;
@@ -121,14 +58,40 @@
             cursor: pointer;
             margin-top: 20px;
         }
+
+         .logo img {
+             height: 100px;
+         }
+
+        .userinfo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: bold;
+            color: #003399;
+        }
+
+        .userinfo img {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            border: 1px solid #ccc;
+        }
     </style>
 </head>
 <body>
 
 <!-- 헤더 -->
 <div class="header">
-    <div class="logo">한성대학교 HANSUNG UNIVERSITY</div>
-    <div class="userinfo">2291001 한지운</div>
+    <!-- 로고 이미지 -->
+    <div class="logo">
+        <img src="<c:url value='/resources/images/logo.png' />" alt="한성대학교 로고" />
+    </div>
+    <!-- 사용자 정보 + 아이콘 -->
+    <div class="userinfo">
+        2291001 한지운
+        <img src="<c:url value='/resources/images/sangsang.png' />" alt="사용자 아이콘" />
+    </div>
 </div>
 
 <!-- 사이드바 + 메인 -->
@@ -136,10 +99,18 @@
 
     <!-- 사이드바 -->
     <div class="sidebar">
-        <button>메인 페이지</button>
-        <button>학년별 이수학점 조회</button>
-        <button class="active">수강 신청하기</button>
-        <button>수강 신청 조회</button>
+        <form action="${pageContext.request.contextPath}/" method="get">
+            <button type="submit" class="nav-button nav-main">메인 페이지</button>
+        </form>
+        <form action="${pageContext.request.contextPath}/credits" method="get">
+            <button type="submit" class="nav-button nav-credits">학년별 이수학점 조회</button>
+        </form>
+        <form action="${pageContext.request.contextPath}/registration" method="get">
+            <button type="submit" class="nav-button nav-register">수강 신청하기</button>
+        </form>
+        <form action="${pageContext.request.contextPath}/applications" method="get">
+            <button type="submit" class="nav-button nav-view">수강 신청 조회</button>
+        </form>
     </div>
 
     <!-- 메인 콘텐츠 -->
