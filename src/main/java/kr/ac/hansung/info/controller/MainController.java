@@ -48,7 +48,7 @@ public class MainController {
         return "credits";
     }
 
-    // 1.2 상세보기 ／／ 에러
+    // 1.2 상세보기
     @GetMapping("/credits-detail")
     public String showAllCredits(@RequestParam("year") int year,
                                  @RequestParam("semester") int semester,
