@@ -146,5 +146,24 @@
       <scope>test</scope>
     </dependency>
 
+    <!-- JPA + Hibernate for Spring 6 -->
+    <dependency>
+      <groupId>org.springframework.data</groupId>
+      <artifactId>spring-data-jpa</artifactId>
+      <version>3.1.6</version> <!-- Spring 6과 호환 -->
+    </dependency>
+
+    <dependency>
+      <groupId>org.hibernate.orm</groupId>
+      <artifactId>hibernate-core</artifactId>
+      <version>6.3.1.Final</version> <!-- Hibernate 6.x: Spring 6 대응 -->
+    </dependency>
+
+    <!-- Jakarta Persistence API (Spring 6부터는 javax → jakarta로 변경됨) -->
+    <dependency>
+      <groupId>jakarta.persistence</groupId>
+      <artifactId>jakarta.persistence-api</artifactId>
+      <version>3.1.0</version>
+    </dependency>
   </dependencies>
 </project>
