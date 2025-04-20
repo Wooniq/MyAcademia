@@ -1,10 +1,33 @@
-# 📘 MyAcademia: 학사 정보 시스템
-<!--![image](https://github.com/Wooniq/MyAcademia/assets/preview-image-link)-->
+# 📚 웹프레임워크2 과제1: SpringMVC를 활용한 학사정보시스템
 
-## 👋 프로젝트에 오신 것을 환영합니다 👋
+이 저장소는 **웹프레임워크2** 교과목의 **과제 1**을 위한 Spring Framework 기반 프로젝트입니다.
 
-**MyAcademia**는 학생이 본인의 학사 정보를 웹을 통해 효율적으로 조회하고 수강 신청까지 할 수 있는 **Spring MVC 기반 학사 정보 시스템**입니다.  
-본 시스템은 학생의 **이수 학점 현황**, **수강 신청 기능**, 그리고 **수강 신청 내역 확인 기능**을 통합 제공합니다.
+  <p align="center">
+  <a href="https://spring.io/projects/spring-framework">
+    <img src="https://img.shields.io/badge/Spring_Framework-%236DB33F.svg?style=flat-square&logo=spring&logoColor=white"/>
+  </a>
+  <a href="https://www.mysql.com/">
+    <img src="https://img.shields.io/badge/MySQL-%234479A1.svg?style=flat-square&logo=mysql&logoColor=white"/>
+  </a>
+  <a href="https://www.java.com/">
+    <img src="https://img.shields.io/badge/Java-%23ED8B00.svg?style=flat-square&logo=java&logoColor=white"/>
+  </a>
+</p>
+
+## 🛠️ 기술 스택
+- Spring Framework 6.2.3
+- Java 21
+- Maven
+- MySQL (데이터베이스)
+
+## 📂 프로젝트 개요
+Spring MVC 아키텍처를 활용하여 수강 신청 시스템을 구현한 웹 애플리케이션입니다.  
+기본적인 **요청-응답 흐름**, **Model-View-Controller 설계**, **데이터 검증 및 바인딩**, **JDBC / JPA 연동** 등을 포함합니다.
+
+## ✅ 주요 기능
+- 학년별 이수 학점 조회
+- 수강 신청 등록 및 삭제
+- 수강 신청 내역 확인 및 상세 조회
 
 > **전체 GPA 및 학점, 학기별 과목 현황을 한눈에 확인할 수 있으며, 직관적인 UI/UX로 설계되었습니다.**
 
@@ -12,6 +35,12 @@
     <img src="https://img.shields.io/github/stars/Wooniq/MyAcademia" alt="GitHub stars">
     <img src="https://img.shields.io/github/license/Wooniq/MyAcademia" alt="GitHub license">
 </p>
+
+## 📄 과제 제출 정보
+- **과목명**: 웹프레임워크2
+- **담당 교수님**: 김남윤
+- **제출자**: 한지운 / 2291001
+- **과제명**: 과제 1 - Spring 기반 웹 애플리케이션
 
 ---
 
