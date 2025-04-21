@@ -126,10 +126,8 @@ myAcademia/
    ```bash
     cd MyAcademia
     ```
-3. **빌드 및 실행:**
-    ```bash
-    ./gradlew bootRun
-    ```
+3. **빌드 및 실행**
+
 4. **웹 브라우저로 접속:**
   `http://localhost:8080`
 
